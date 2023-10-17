@@ -8,7 +8,7 @@ const server = http.createServer(app);
 app.use("/public", express.static("public"));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 const wss = new WebSocket.Server({ server });
